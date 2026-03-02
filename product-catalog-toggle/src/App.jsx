@@ -10,9 +10,9 @@ function App() {
     {id: 2, name: "Keyboard", price: 25.5, category: "electronics"},
     {id: 3, name: "Mouse", price: 15.5, category: "electronics"},
     {id: 4, name: "Joy Stick", price: 125, category: "electronics"},
-    {id: 5, name: "Joy Stick", price: 125, category: "electronics"},
-    {id: 6, name: "Joy Stick", price: 125, category: "electronics"},
-    {id: 7, name: "Joy Stick", price: 125, category: "electronics"}
+    {id: 5, name: "Book", price: 125, category: "accessories"},
+    {id: 6, name: "Wrist Watch", price: 125, category: "accessories"},
+    {id: 7, name: "Ruler", price: 125, category: "accessories"}
   ]
 
   return (
