@@ -1,6 +1,6 @@
 
 
-function ProductCard ({name, price, category, isInCart, onToggle}) {
+function ProductCard ({name, price, category, isInCart, onToggle, onUpdateQuantity}) {
     return (
         <div style={{
             padding: '10px 20px',
@@ -14,9 +14,9 @@ function ProductCard ({name, price, category, isInCart, onToggle}) {
             <button onClick={onToggle}>{isInCart ? 'Remove from Cart' : 'Add to Cart'}</button>
 
             {isInCart && (
-                <div>
-                    <button>+</button>
-                    <button>-</button>
+                <div style={{display: 'flex', marginTop: '5px', gap: '3px'}}>
+                    <button style={{flex: 1}} onClick={() => onUpdateQuantity(1)}>+</button>
+                    <button style={{flex: 1}} onClick={() => onUpdateQuantity(-1)}>-</button>
                 </div>
             )}
         </div>
